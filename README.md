@@ -5,4 +5,4 @@ Esempio di pubblicazione di un ecommerce da GitHub a Netlify, con la creazione d
 
 Il repository è pubblicato a questo indirizzo https://dolcini-ecommerce-freguglia.netlify.app/
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/web-platform-pb6ff6)
+
