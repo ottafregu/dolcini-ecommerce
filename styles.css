@@ -14,7 +14,7 @@ html, body {
 /*header*/
 
 #logo{
-  width: 100px;
+  height: 30px;
   margin-left: 20px;
   border: 2px solid pink
 }
