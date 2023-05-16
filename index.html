@@ -31,37 +31,46 @@
 <body>
   <!-- head line -->
   <header>
-    <div id="headline">
+    <div class="headline">
       <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <div id="casella-logo">
-          <a href="index.html">
-            <img id="logo" src="immagini/logo.png">
-          </a>
-        </div>
+    
+   <!-- menu -->    
+    <ul class="menu">
+      <div class="menu-close fa fa-close"></div>
+      <li class="menu-global menu-top">
+        <span class="menu-text">
+          <a class="nav-link" href="aboutus.html">Chi siamo</a>
+        </span>
+      </li>
+      <li class="menu-global menu-middle">
+        <span class="menu-text">
+          <a class="nav-link" href="#personalizzazione">Personalizzazioni</a>
+        </span>
+      </li>
+      <li class="menu-global menu-bottom">
+        <span class="menu-text">
+          <a class="nav-link" href="#contatti">Contatti</a>
+        </span>
+      </li>
+    </ul>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+   <!-- logo -->
+    <center>
+     <div id="casella-logo">
+        <a href="index.html">
+            <img id="logo" src="immagini/logobianco.png">
+        </a>
+     </div>
+    </center>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="carrello.html"><i class="fa fa-shopping-cart" style="font-size:20px"></i> <span style="font-size: 17px;  padding: 4px;  color:white" id="carrello">0</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="aboutus.html">Chi siamo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#personalizzazione">Personalizzazioni</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contatti">Contatti</a>
-            </li>
-          </ul>
-        </div>
+   <!-- menu -->
+     <div id="boxcarrello">
+        <a href="carrello.html"><i class="fa fa-shopping-cart" style="font-size:25px; color: white;"></i> <span style="font-size: 20px;  padding: 4px;  color:white" id="carrello">0</span></a>
+     </div>
+   
       </div>
-    </nav>
+      </nav>
     </div>
   </header>
 
@@ -94,47 +103,6 @@
       </div>
 
       <h1>Quale dei nostri Dolcini vuoi gustarti oggi?</h1>
-
-  <!-- contenitori 2-->
-
-  <section>
-    <div class="row">
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="card">
-          <div class="cover item-a">
-            <h1>Torta</h1>
-            <span class="price">da 20€</span>
-            <div class="card-back">
-              <a href="#">Add to cart</a>
-              <a href="#">View detail</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="card">
-          <div class="cover item-b">
-            <h1>Cupcake</h1>
-            <span class="price">da 13€</span>
-            <div class="card-back">
-              <a href="#">Add to cart</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="card">
-          <div class="cover item-c">
-            <h1>Roll</h1>
-            <span class="price">da 15€</span>
-            <div class="card-back">
-              <a href="#">Add to cart</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
   
   <!-- contenitori -->  
     
@@ -193,7 +161,7 @@
     </main>
 
   <!-- footer --> 
-    <footer id="footer">
+    <footer class="footer">
       <div class="container text-center">
         
         <div class="fot">
