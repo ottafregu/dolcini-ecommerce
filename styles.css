@@ -16,167 +16,203 @@ html, body {
   z-index: 3;
   margin-top: 30px;
   width: 100%;
-  height: 60px;
+  height: 10%;
   position: fixed;
   background-color: #DD925F;
 }
 
 #casella-logo{
   display: inline-block;
-  
+  width: 50%;
 }
 
 #logo{
-  width: 150px;
-  margin-left: 40px;
-  margin-top: 10px;
-}
- 
- /*burger menu*/
-span {
-  display: inline-block;
-  vertical-align: middle;
-  color: white;
+  width: 160px;
+  margin-left: 10%;
+  margin-top: 15px;
 }
 
-ul {
+/*menu*/
+#navbarNav{
+  display: inline-block;
+  float: right;
+  margin: 25px 30px ;
+}
+
+.nav-item{
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 17px;
+}
+
+/*swiper*/
+
+.swiper {
+  width: 100%;
+  height: 90%;
+  margin-top: -30px;
+}
+
+.swiper-slide {
+  background: #DD925F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
   display: block;
-  list-style-type: none;
-  text-align: right;
-}
-
-a {
-  color: #FFF;
-}
-a:hover {
-  opacity: 0.7;
-}
-
-.menu {
-  display: inline-block;
-  margin-right: 100px;
-  margin-top: 8px;
-  float: right;
-  padding-left: 1.25em;
-  cursor: pointer;
-  position: relative;
-  width: 30px;
-  height: 10px;
-  text-align: right;
-}
-
-.menu-close {
-  font-size: 0em;
-  opacity: 0;
-  text-align: center;
-  font-weight: bold;
-
-  -webkit-transition: 0.2s;
-          transition: 0.2s;
-}
-
-.menu-close-visible {
-  font-size: 2em;
-  opacity: 1;
-
-  -webkit-transition: 0.2s 0.4s;
-          transition: 0.2s 0.4s;
-}
-
-.menu-global {
-  z-index: 2;
-  position: absolute;
-  float: right;
-  height: 5px; 
-  width: 200%;
-  background-color: #000000;
-  margin: 0px 30px 150px 0px;
-
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transition: 0.2s;
-          transition: 0.2s;
-}
-
-.menu-global:hover {
-  left: 10px;
-  -webkit-transition: all 0.2s;
-          transition: all 0.2s;
-}
-
-.menu-top {
-  top: 0;
-}
-.menu-middle {
-  top: 18px;
-}
-.menu-bottom {
-  top: 36px;
-}
-
-.menu-text{
-  opacity: 0;
-  font-size: 0em;
-  padding: 10px 0;
-  -webkit-transition: 0.1s;
-          transition: 0.1s;
-}
-
-.expand {
-  box-shadow: rgba(0, 0, 0, 0.1) -2.5px 5px 7.5px, rgba(0, 0, 0, 0.1) 2.5px 5px 7.5px;
-  width: 200px;
-  height: 50px;
-
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
-.menu-top-expand {
-  top: 50px;
-  background: #FFF8E1;
-
-  -webkit-transition: all 0.5s 0.2s, left 0.1s;
-          transition: all 0.5s 0.2s, left 0.1s;
-}
-
-.menu-middle-expand {
-  top: 100px;
-  background: #FFECB3;
-
-  -webkit-transition: all 0.5s 0.1s, left 0.1s;
-          transition: all 0.5s 0.1s, left 0.1s;
-}
-
-.menu-bottom-expand {
-  top: 150px;
-  height: 100px;
-  background: #FFE082;
-
-  -webkit-transition: all 0.5s, left 0.1s;
-          transition: all 0.5s, left 0.1s;
-}
-
-.menu-text-expand{
-  color: #000000;
-  opacity: 0.8;
-  padding: 10px;
-  font-size: 1.3em;
-  -webkit-transition: all 0.2s 0.7s, font-size 0.1s;
-          transition: all 0.2s 0.7s, font-size 0.1s;
-}
-
-.container-fluid{
-  padding: 5px;
-  background-color: #FFE6AE;
-  margin: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*intestazione home*/
+
 h1 {
   font-family: 'DM Serif Display', serif;
+  text-align: center;
+  color: black;
+  margin: 40px auto 0px auto;
+  text-shadow: 0px 0px 6px rgba(255,255,255,10);
+}
+
+/*box prodotti 2*/
+
+$transition-time: 2.3s;
+
+.card{
+	position: relative;
+	height: 400px;
+	width: 100%;
+	margin: 10px 0;
+	transition: ease all $transition-time;
+	perspective: 1200px;
+	&:hover{
+		.cover{
+			transform: rotateX(0deg) rotateY(-180deg);
+			&:before{
+				transform: translateZ(30px);
+			}
+			&:after{
+				background-color: black;
+			}
+			h1{
+				transform: translateZ(100px);
+			}
+			.price{
+				transform: translateZ(60px);
+			}
+			a{
+				transform: translateZ(-60px) rotatey(-180deg);
+			}
+		}
+	}
+	
+	.cover{
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		transform-style: preserve-3d;
+  	transition: ease all $transition-time;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		&:before{
+			content: '';
+			position: absolute;
+			border: 4px solid rgba(255,255,255,.5);
+			box-shadow: 0 0 12px rgba(0,0,0,.3); 
+			top:20px;
+			left:20px;
+			right:20px;
+			bottom:20px;
+			z-index: 2;
+			transition: ease all $transition-time;
+			transform-style: preserve-3d;
+			transform: translateZ(0px);
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			top:0px;
+			left:0px;
+			right:0px;
+			bottom:0px;
+			z-index: 2;
+			transition: ease all 1.3s;
+			background: rgba(0,0,0,.4);
+		}
+		&.item-a{
+			background-image:  url("immagini/cake5.jpeg");
+		}
+		&.item-b{
+			background-image: url("immagini/muffin-copertina4.png")
+    }
+		&.item-c{
+			background-image: url("immagini/roll-copertina2.png")
+    }
+		h1{
+			font-weight: 600;
+			position: absolute;
+			bottom: 55px;
+			left: 50px;
+			color: white;
+			transform-style: preserve-3d;
+  		transition: ease all $transition-time;
+			z-index:3;
+			font-size: 3em;
+			transform: translateZ(0px);
+		}
+		.price{
+			font-weight: 200;
+			position: absolute;
+			top: 55px;
+			right: 50px;
+			color: white;
+			transform-style: preserve-3d;
+  		transition: ease all $transition-time;
+			z-index:4;
+			font-size: 2em;
+			transform: translateZ(0px);
+		}
+	}
+	.card-back{
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background: #0b0f08;
+		transform-style: preserve-3d;
+  	transition: ease all $transition-time;
+		transform: translateZ(-1px);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		a{
+			transform-style: preserve-3d;
+			transition: ease transform $transition-time, ease background .5s;
+			transform: translateZ(-1px) rotatey(-180deg);
+			background: transparent;
+			border: 1px solid white;
+			font-weight: 200;
+			font-size: 1.3em;
+			color: white;
+			padding: 14px 32px;
+			outline: none;
+			text-decoration: none;
+			&:hover{
+				background-color: white;
+				color: #0b0f08;
+			}
+		}
+	}
 }
 
 /*box prodotti*/
+
+#box-prodotti{
+  margin: 7% auto;
+}
 
 .card-img-top:hover {
     opacity: 0.5;   
@@ -188,37 +224,17 @@ h1 {
 
 
 .btn-primary{
-  background-color:violet !important;
-  border-color:purple !important;
-}
-
-/*swiper*/
-
-.swiper {
-      width: 100%;
-      height: 80%;
-      margin-top: -30px;
-}
-
-.swiper-slide {
-      background: #DD925F;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-}
-
-.swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+  background-color:#935931 !important;
+  border-color:none;
 }
 
 /*footer*/
 
 #footer {
-  background-color: #DD925F;
+  background-color: #935931;
   color: white;
+  padding: 10px;
+  
 }
 
 .contatti-social{
@@ -229,16 +245,22 @@ h1 {
 #map {
   width: auto;
   height: 150px;
-  margin-right:50px
+  margin-right:40px
 }
 
 .fot{
   display: inline-block;
   margin: 10px auto;
+  vertical-align: top;
+}
+
+#rimandosocial{
+  margin-left:20px ;
+  border-left: 1px solid #FFE6AE;
+  padding-left:20px
 }
 
 .social{
-  font-size: 12px;
   margin: 10px 30px 10px 0px;
   display: inline-block;
   color: white;

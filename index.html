@@ -23,26 +23,48 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <!-- Link per jquery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
   
   
 <body>
   <!-- head line -->
+  <header>
     <div id="headline">
-      <div id="casella-logo">
-        <a href="index.html">
-          <img id="logo" src="immagini/logo.png">
-        </a>
+      <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <div id="casella-logo">
+          <a href="index.html">
+            <img id="logo" src="immagini/logo.png">
+          </a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="carrello.html"><i class="fa fa-shopping-cart" style="font-size:20px"></i> <span style="font-size: 17px;  padding: 4px;  color:white" id="carrello">0</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">Chi siamo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#personalizzazione">Personalizzazioni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contatti">Contatti</a>
+            </li>
+          </ul>
+        </div>
       </div>
-       
-      <!-- burger menu -->
-        <ul class="menu">
-          <div class="menu-close fa fa-close"></div>
-          <li class="menu-global menu-top"><span class="menu-text">Personalizzazione</span></li>
-          <li class="menu-global menu-middle"><span class="menu-text">About us</span></li>
-          <li class="menu-global menu-bottom"><span class="menu-text">My Carrello</span></li>
-        </ul>
+    </nav>
     </div>
+  </header>
+
 
   <!-- Swiper -->
       <div class="swiper mySwiper">
@@ -54,7 +76,7 @@
             <img src="immagini/muffin1.jpeg">
           </div>
           <div class="swiper-slide">
-            <img src="immagini/roll1.jpeg">
+            <img src="immagini/roll5.jpeg">
           </div>
           <div class="swiper-slide">
             <img src="immagini/cake2.jpeg">
@@ -73,47 +95,100 @@
 
       <h1>Quale dei nostri Dolcini vuoi gustarti oggi?</h1>
 
+  <!-- contenitori 2-->
+
+  <section>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="card">
+          <div class="cover item-a">
+            <h1>Torta</h1>
+            <span class="price">da 20€</span>
+            <div class="card-back">
+              <a href="#">Add to cart</a>
+              <a href="#">View detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="card">
+          <div class="cover item-b">
+            <h1>Cupcake</h1>
+            <span class="price">da 13€</span>
+            <div class="card-back">
+              <a href="#">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="card">
+          <div class="cover item-c">
+            <h1>Roll</h1>
+            <span class="price">da 15€</span>
+            <div class="card-back">
+              <a href="#">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <!-- contenitori -->  
+    
     <main class="container my-5">
         
-        <hr>
+        <div id="box-prodotti">
         <div class="row row-cols-1 row-cols-md-3 g-4">
+
             <div class="col">
+              <div id="prodotto1">
                 <div class="card h-100">
-                  <a href="prodotto.html">
-                    <img src="https://via.placeholder.com/300x200.png" class="card-img-top" alt="...">
-                  </a>
+                    <img src="immagini/cake5.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Prodotto 1</h5>
-                        <p class="card-text">Descrizione prodotto 1.</p>
-                        <p class="card-text"><strong>Prezzo:</strong> €99,99</p>
-                        <a href="#" class="btn btn-primary">Aggiungi al carrello</a>
+                        <h4 class="card-title"><b>TORTA</b></h4>
+                        <p class="card-text">Torta al pan di spagna con ripieno a scelta tra fragole, mirtilli, crema e cioccolato</p>
+                        <p class="card-text"><strong>Prezzo:</strong> da €20</p>
+                        <a href="#" class="btn btn-primary" onclick="aggiungiAlCarrello()">Aggiungi al carrello</a>
+                        <a href="#" class="btn btn-primary" onclick="rimuoviDalCarrello()">Rimuovi al carrello</a>
                     </div>                    
                 </div>
+              </div>
             </div>
+
             <div class="col">
+              <div id="prodotto2">
                 <div class="card h-100">
-                    <img src="https://via.placeholder.com/300x200.png" class="card-img-top" alt="...">
+                    <img src="immagini/muffin-copertina4.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Prodotto 2</h5>
-                        <p class="card-text">Descrizione prodotto 2.</p>
-                        <p class="card-text"><strong>Prezzo:</strong> €79,99</p>
-                        <a href="#" class="btn btn-primary">Aggiungi al carrello</a>
+                        <h4 class="card-title"><b>CUPCAKE</b></h4>
+                        <p class="card-text">Cupcake morbido con ripieno a scelta tra fragole, crema, cioccolato e red velvet</p>
+                        <p class="card-text"><strong>Prezzo:</strong> da €13</p>
+                        <a href="#" class="btn btn-primary" onclick="aggiungiAlCarrello()">Aggiungi al carrello</a>
+                        <a href="#" class="btn btn-primary" onclick="rimuoviDalCarrello()">Rimuovi al carrello</a>
                     </div>
                 </div>
+              </div>
             </div>
+
             <div class="col">
+              <div id="prodotto3">
                 <div class="card h-100">
-                    <img src="https://via.placeholder.com/300x200.png" class="card-img-left" alt="...">
+                    <img src="immagini/roll-copertina2.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Prodotto 3</h5>
-                        <p class="card-text">Descrizione prodotto 3.</p>
-                        <p class="card-text"><strong>Prezzo:</strong> €129,99</p>
-                        <a href="#" class="btn btn-primary" onclick="aggiungiAlCarrello()">Aggiungi 1 al carrello</a>
-                        <a href="#" class="btn btn-primary" onclick="rimuoviDalCarrello()">Rimuovi 1 al carrello</a>
+                        <h4 class="card-title"><b>ROLL</b></h4>
+                        <p class="card-text">Roll al pan di spagna con ripieno a scelta tra fragole, crema e cioccolato</p>
+                        <p class="card-text"><strong>Prezzo:</strong> da €15</p>
+                        <a href="#" class="btn btn-primary" onclick="aggiungiAlCarrello()">Aggiungi al carrello</a>
+                        <a href="#" class="btn btn-primary" onclick="rimuoviDalCarrello()">Rimuovi al carrello</a>
                     </div>
                 </div>
+              </div>
             </div>
+            
+        </div>
         </div>
     </main>
 
@@ -126,18 +201,22 @@
         </div> 
         
         <div class="fot">
-          <p class="social" style="font-size:15x; text-align:left;"><b>Resta aggiornato sulle nostre novità,<br>seguici anche sui social!</b></p>
-          <a href="https://www.instagram.com/acmenovaraaccademia/" class="social"><i class="fa fa-instagram" style="font-size:25px; color: white;"></i></a>
-          <a href="https://www.facebook.com/ACMEaccademiaNovara/"  class="social"><i class="fa fa-facebook-f" style="font-size:25px; color: white;"></i></a>
-
           <p id="testofooter">
-            <i class="material-icons" style="font-size:15px; color: #FFE6AE;">location_on</i> Address / 地址  Novara (Italy), via C. Porta 25<br>
-            <i class="material-icons" style="font-size:15px; color: #FFE6AE;">call</i> Tel. /  电话 (+39) 0321.627101 / 628381 - Fax / 传真 (+39) 0321.35400<br>
-            <i class="material-icons" style="font-size:15px; color: #FFE6AE;">email</i> dolcinicakelab@gmail.it<br>
+            <i class="material-icons" style="font-size:15px; color: #FFE6AE;">location_on</i>  Novara (Italy), via C. Porta 25<br>
+            <i class="material-icons" style="font-size:15px; color: #FFE6AE;">call</i>  (+39) 0321.627101 / 628381 <br>
+            <i class="material-icons" style="font-size:15px; color: #FFE6AE;">email</i>  dolcinicakelab@gmail.it<br>
             <br>
             DOLCINI cake lab srl<br>
             © Sella srl - PI 01176320032
           </p>
+        </div>
+
+        <div class="fot">
+          <div id="rimandosocial">
+            <h4 style="text-align:center;">Resta aggiornato sulle nostre novità,<br>seguici anche sui social!</h4>
+            <a href="https://www.instagram.com/acmenovaraaccademia/" class="social"><i class="fa fa-instagram" style="font-size:35px; color: white;"></i></a>
+            <a href="https://www.facebook.com/ACMEaccademiaNovara/"  class="social"><i class="fa fa-facebook-f" style="font-size:35px; color: white;"></i></a>
+          </div>
         </div>
       </div>
     </footer>
