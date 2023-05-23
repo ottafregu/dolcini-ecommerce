@@ -31,7 +31,7 @@
 <body>
   <!-- head line -->
   <header>
-    <div class="headline">
+    <div class="headline-carrello">
       <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
     
@@ -57,27 +57,38 @@
 
    <!-- logo -->
     <center>
-     <div id="casella-logo">
+     <div class="casella-logo">
         <a href="index.html">
-            <img id="logo" src="immagini/logobianco.png">
+            <img class="logo" src="immagini/logobianco.png">
         </a>
      </div>
     </center>
 
-   <!-- menu -->
-     <div id="boxcarrello">
-        <a href="carrello.html"><i class="fa fa-shopping-cart" style="font-size:25px; color: white;"></i> <span style="font-size: 20px;  padding: 4px;  color:white" id="carrello">0</span></a>
-     </div>
+   <!-- carrello -->
+    <div class="boxcarrello">
+      
+    </div>
    
       </div>
       </nav>
     </div>
   </header>
 
+   <div id="spazio-vuoto">
+   </div>
+ 
+  <!-- carrello -->
+    <h1 id="intestazione-carrello">Pronti per l’acquisto:</h1>
+  
+    <div id="cart-items">
+  <!-- Gli elementi del carrello saranno generati dinamicamente qui -->
+    </div>
+ 
+    <h2>Totale: <span id="cart-total">$0.00</span></h2>
+ 
+    <button id="checkout-btn">Checkout</button>    
 
-<div id="contenitori">
-  <h1>PRODOTTI NEL CARRELLO</h1>
-</div>
+
 
   <!-- footer --> 
     <footer class="footer">

@@ -25,12 +25,12 @@ html, body {
 	width: 100%;
 }
 
-#casella-logo{
+.casella-logo{
   display: inline-block;
   width: 50%;
 }
 
-#logo{
+.logo{
   width: 160px;
   margin-top: 15px;
 }
@@ -168,7 +168,7 @@ span {
 			transition: all 0.2s 0.7s, font-size 0.1s;
   }
 
-#boxcarrello{
+.boxcarrello{
 	float: right;
 	align-content: right;
 	margin-right: 20px;
@@ -218,7 +218,7 @@ h1 {
 }
 
 .card-img-top:hover {
-    opacity: 0.5;   
+    opacity: 0.5;  
   }
 
 .navbar-toggler {
@@ -226,7 +226,7 @@ h1 {
 }
 
 
-.btn-primary{
+.btn-primary {
   background-color:#935931 !important;
   border-color:none;
 }
@@ -259,7 +259,6 @@ h1 {
 
 #rimandosocial{
   margin-left:20px ;
-  border-left: 1px solid #FFE6AE;
   padding-left:20px
 }
 
@@ -275,4 +274,69 @@ h1 {
   font-size: 12px;
   text-align: left;
   color: #FFE6AE;
+}
+
+
+
+
+
+
+
+
+
+
+/*carrello*/
+
+#spazio-vuoto{
+  width: 100%;
+  height: 10%;
+}
+
+#intestazione-carrello {
+  font-family: 'DM Serif Display', serif;
+  text-align: center;
+  color: black;
+  margin: 30px auto;
+  text-shadow: 0px 0px 6px rgba(255,255,255,10);
+}
+
+h2 {
+  text-align: center;
+}
+
+#cart-items {
+  margin: 20px;
+}
+
+.cart-item {
+  background-color: white;
+  padding: 10px;
+  margin: 0px auto 10px auto;
+  width: 50%;
+  text-align: right;
+}
+
+#cart-total {
+  font-weight: bold;
+  color: black;
+}
+
+#checkout-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #935931;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/*carrello*/
+.headline-carrello{
+  z-index: 3;
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  background-color: #935931;
 }
