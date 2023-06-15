@@ -9,30 +9,36 @@ html, body {
       background-attachment: fixed;
       background-size: cover;
       background-position: center;
+      grid-template-rows: auto 1fr auto;
 }
 
 /*header*/
 
 .headline{
   z-index: 3;
-  margin-top: 30px;
+  padding: 10px;
   width: 100%;
-  height: 10%;
+  height: auto;
   position: fixed;
   background-color: #935931;
 }
+
 .navbar-toggler {
 	width: 100%;
 }
 
+.navbar{
+  margin-bottom: 0px;
+}
+
 .casella-logo{
   display: inline-block;
-  width: 50%;
+  width: auto%;
 }
 
 .logo{
   width: 160px;
-  margin-top: 15px;
+  margin-top: ;
 }
 
 /*menu*/
@@ -55,11 +61,12 @@ span {
   }
   a:hover {
 	opacity: 0.7;
+  text-decoration: none;
   }
  
   
   .menu {
-	margin: 0 20px 0 0;
+	margin: 0 0px 0 0;
 	padding-left: 1.25em;
 	cursor: pointer;
 	position: relative;
@@ -170,16 +177,14 @@ span {
 
 .boxcarrello{
 	float: right;
-	align-content: right;
-	margin-right: 20px;
 }
 
 /*swiper*/
 
 .swiper {
   width: 100%;
-  height: 90%;
-  margin-top: -30px;
+  height: 85%;
+
 }
 
 .swiper-slide {
@@ -202,6 +207,11 @@ span {
 
 /*intestazione home*/
 
+#ancora{
+  height: 8%;
+  margin-top: -60px;
+}
+
 h1 {
   font-family: 'DM Serif Display', serif;
   text-align: center;
@@ -219,6 +229,7 @@ h1 {
 
 .card-img-top:hover {
     opacity: 0.5;  
+    box-shadow: 0px 0px 40px #935931;
   }
 
 .navbar-toggler {
@@ -280,63 +291,57 @@ h1 {
 
 
 
-
-
-
-
-
-/*carrello*/
+                                     /*carrello*/
 
 #spazio-vuoto{
   width: 100%;
   height: 10%;
 }
 
-#intestazione-carrello {
-  font-family: 'DM Serif Display', serif;
-  text-align: center;
-  color: black;
-  margin: 30px auto;
-  text-shadow: 0px 0px 6px rgba(255,255,255,10);
-}
-
-h2 {
-  text-align: center;
-}
-
-#cart-items {
-  margin: 20px;
-}
-
-.cart-item {
+#contenitore-carrello{
   background-color: white;
   padding: 10px;
-  margin: 0px auto 10px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px #935931;
+}
+
+tr{
+  background-color: white;
+  border-bottom: 1px solid #935931;
+}
+
+
+
+                                     /*aboutus*/
+#body-aboutus{
+  position: relative;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      color: #000;
+      background-image: url("immagini/sfondoaboutus.png");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      grid-template-rows: auto 1fr auto;
+}
+
+#boxtesto{
+  background-color: white;
   width: 50%;
-  text-align: right;
+  padding: 20px;
+  margin:auto;
 }
 
-#cart-total {
-  font-weight: bold;
-  color: black;
+#titolo-aboutus{
+  color:white;
+  margin: 20px auto
 }
 
-#checkout-btn {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #935931;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
 
-/*carrello*/
-.headline-carrello{
-  z-index: 3;
-  width: 100%;
-  height: 10%;
-  position: fixed;
-  background-color: #935931;
+                                     /*box prodotto*/
+#prodotti-singoli{
+  margin-top: 0px;
+  border: 5px solid red;
 }
