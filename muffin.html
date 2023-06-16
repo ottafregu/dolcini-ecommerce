@@ -74,45 +74,55 @@
     </div>
   </header>
 
-  
+
+   <div id="spazio-prodotto"></div>
   <!-- box prodotto -->
   <main id="prodotti-singoli" class="container my-5">
     <div class="row">
       <div class="col-md-6">
-        <img src="https://via.placeholder.com/600x400" alt="Immagine di esempio" class="img-fluid">
+        <img class="immagine-prodotto" src="img/muffin4.webp" alt="CUPCAKE" class="img-fluid">
       </div>
       <div class="col-md-6">
-        <h1 class="mb-4">Nome prodotto</h1>
+        <h1 class="mb-4">CUPCAKE</h1>
         <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus nec ante sagittis
           ultrices vel vitae justo. Fusce at erat neque. Nunc ultrices risus sed sapien faucibus, a elementum nibh
           vestibulum. Sed ut metus nulla. Nulla in nisi in elit consectetur mollis. </p>
-        <h2 class="mb-3">Prezzo: €XX,XX</h2>
+        <h2 class="mb-3">Prezzo: €13</h2>
         <form>
           <div class="mb-3">
             <label for="quantita" class="form-label">Quantità:</label>
             <input type="number" class="form-control" id="quantita" min="1" value="1">
           </div>
           <div class="mb-3">
-            <label for="taglia" class="form-label">Taglia:</label>
-            <!-- group -->
-            <div class="input-group">
-              <input type="text" class="form-control" id="taglia" placeholder="taglia selezionata" readonly="readonly">
-              <i class="fas fa-chevron-down" onclick="visualizzaTaglie()" id="tagliedown"></i>
-              <i class="fas fa-chevron-up" onclick="visualizzaTaglie()" id="taglieup" style="display: none;"></i>
-            </div>
-            <div id="taglie" style="display: none;">
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <td onclick="cambiaTaglia()">S</td>
-                    <td onclick="cambiaTaglia()">M</td>
-                    <td onclick="cambiaTaglia()">L</td>
-                    <td onclick="cambiaTaglia()">XL</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <label for="quantita" class="form-label">Come vorresti il tuo cupcake?</label>
+            <!-- tipo base -->
+            <select class="form-select" aria-label="Default select example">
+              <option selected>scegli la base</option>
+              <option value="1">pan di spagna normale</option>
+              <option value="2">cioccolato</option>
+              <option value="3">mele</option>
+              <option value="3">carote</option>
+            </select>
+            <div class="mb-3">
+              <!-- tipo crema -->
+              <select class="form-select" aria-label="Default select example">
+                <option selected>scegli la crema</option>
+                <option value="1">vaniglia</option>
+                <option value="2">cioccolato</option>
+                <option value="3">zucchero filato</option>
+                <option value="3">caramello</option>
+              </select>
           </div>
+          <div class="mb-3">
+            <!-- tipo topping -->
+            <select class="form-select" aria-label="Default select example">
+              <option selected>scegli il topping</option>
+              <option value="1">codette di zucchero</option>
+              <option value="2">gocce di cioccolato</option>
+              <option value="3">granella di nocciole</option>
+              <option value="3">fragoline</option>
+            </select>
+        </div>
           <span class="btn btn-primary">Aggiungi al carrello</span>
         </form>
       </div>
