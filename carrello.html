@@ -59,7 +59,7 @@
     <center>
      <div class="casella-logo">
         <a href="index.html">
-            <img class="logo" src="immagini/logobianco.png">
+            <img class="logo" src="img/logobianco.png">
         </a>
      </div>
     </center>
@@ -74,12 +74,12 @@
     </div>
   </header>
 
-   <div id="spazio-vuoto">
+   <div class="spazio-vuoto">
    </div>
  
   <!-- carrello -->
 
-  <h1 class="mb-4">Carrello</h1>
+  <h1 id="titolo-carrello">Carrello</h1>
   
       <main id="contenitore-carrello" class="container my-5">
         <table class="table table">
@@ -87,10 +87,10 @@
             <tr>
               <th scope="col"></th>
               <th scope="col">Prodotto</th>
-              <th scope="col">Prezzo</th>
+              <th scope="col" class="prezzo-singolo">Prezzo</th>
               <th scope="col">Quantità</th>
               <th scope="col">Totale</th>
-              <th scope="col"></th>
+              <th scope="col">Custom</th>
             </tr>
           </thead>
           <tbody>
@@ -99,15 +99,13 @@
                 <img class="img_carrello" src="img/cake5.webp">
               </th>
               <td><b>TORTA</b></td>
-              <td>€20</td>
+              <td class="prezzo-singolo">€20</td>
               <td>
                 <input type="number" class="form-control" min="1" value="1" />
               </td>
               <td>€20</td>
               <td>
-                <button class="btn btn-danger btn-sm">
-                  <i class="bi bi-trash"></i>
-                </button>
+                <button class="bottoni-carrello">No</button>
               </td>
             </tr>
             <tr>
@@ -115,15 +113,13 @@
                 <img class="img_carrello" src="img/muffin4.webp">
               </th>
               <td><b>CUPCAKE</b></td>
-              <td>€52</td>
+              <td class="prezzo-singolo">€13</td>
               <td>
                 <input type="number" class="form-control" min="1" value="4" />
               </td>
-              <td>€13</td>
+              <td>€52</td>
               <td>
-                <button class="btn btn-danger btn-sm">
-                  <i class="bi bi-trash"></i>
-                </button>
+                <button class="bottoni-carrello" style="background-color: #FFE6AE; color:#935931;"><a href="muffin.html">Si</a></button>
               </td>
             </tr>
             <tr>
@@ -131,15 +127,13 @@
                 <img class="img_carrello" src="img/roll2.webp">
               </th>
               <td><b>ROLL</b></td>
-              <td>€15</td>
+              <td class="prezzo-singolo">€15</td>
               <td>
                 <input type="number" class="form-control" min="1" value="2" />
               </td>
               <td>€30</td>
               <td>
-                <button class="btn btn-danger btn-sm">
-                  <i class="bi bi-trash"></i>
-                </button>
+                <button class="bottoni-carrello">No</button>
               </td>
             </tr>
           </tbody>
@@ -168,7 +162,7 @@
       </main>
 
   <!-- footer --> 
-    <footer class="footer">
+    <footer class="footer-capriccioso">
       <div class="container text-center">
         
         <div class="fot">
