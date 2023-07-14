@@ -1,25 +1,19 @@
 ---
-
-
 theme: default
-style: |
-  section {
-    background-color: #fff;
-    font-family: 'Poppins', sans-serif;
-  }
 _class: lead
 paginate: true
 backgroundColor: #fff
-backgroundImage: url('https://marp.app/assets/hero-background.svg')
+backgroundImage: url('https://drive.google.com/file/d/1GTgl7tjp5VSY0mwuxW4a5ZVnHDwfXiCo/view?usp=sharing')
 marp: true
-footer: '**Carlotta Freguglia** _immagine di impresa_'
-header: 'Corso di **WebDesign2**'
+footer: 'https://github.com/ottafregu/ecommerce-freguglia-dolcini'
+header: '**Carlotta Freguglia** _immagine di impresa_'
 ---
 
-![bg width:100%](img/sfondosito.png)
 # Presentazione del mio e-commerce
 
-_Carlotta Freguglia_
+_**Corso di WebDesign 2**_
+
+A. A. 2022-2023
 
 
 <!-- _paginate: false -->
@@ -41,11 +35,14 @@ header{
 
 Per questo progetto ho creato un sito e-commerce sulla vendita di dolci, composto da
 **4 pagine collegate tra di loro:** 
-• Home
-• Pagina prodotto
-• Carrello
-• About us
+- Home
+- Pagina prodotto
+- Carrello
+- About us
+
 Queste pagine sono accomunate da una **headline** e da un **footer** ricorrenti in ogni pagina.
+![gatto h:50px ](/img/sfondosito.png)
+
 
 ---
 
@@ -88,24 +85,60 @@ _Home - Prodotto - Carrello - About us_
 
 ## Home page
 
-Nel footer troviamo la mappa, i contatti e i social: **tre elementi inline** che, allo stringersi della pagina, si posizionano uno sotto l'altro grazie ad una **media query**.
+Nella home page troviamo uno slider, un teitolo e le tre caselle prodotto.
+- Lo slider, cui codice nativo è stato preso da https://swiperjs.com/, contiene 6 immagini di dolci che scorrono una dopo l'altra grazie alla funzione Javascript 'autoplay'.
+
+- Sotto allo slider vi è un titlo che funziona da collegamento con un'ancora interna alla pagina, posizionata appena sopra, che permette al click sulla scritta di far salire la pagina, in modo da rendere visibili le tre caselle prodotto.
+
+---
+
+## Home page
+
+- Sotto alla scitta ci sono le tre caselle prodotto che, usando la class 'card h-100', contengono l'immagine del prodotto, il suo nome, la descrizione, il costo e i tasti collegati al carrello per aggiungere o togliere quantità.
+
+Al passaggio del puntatore sulle immagini dei prodotti, queste diminuiscono l'opacità e si crea un'ombra marrone attorno ad esse. Cliccandoci su invece, si viene reindirizzati alla pagine del prodotto stesso.
 
 ---
 
 ## Pagina prodotto 
 
-Nel footer troviamo la mappa, i contatti e i social: **tre elementi inline** che, allo stringersi della pagina, si posizionano uno sotto l'altro grazie ad una **media query**.
+Nella pagina prodotto troviamo un container fluido di boostrap, contenente due colonne in cui è inserita nuovamente la foto del prodotto e le informazioni a riguardo.
+
+Il box si presenta bianco con un'ombra marrone all'esterno; nella parte delle informazioni sono presenti dei menù a tendina il cui codice nativo è stato preso da https://getbootstrap.com/, che permettono di scegliere quella che sarà la personalizzazione del prodotto.
 
 ---
 
 ## Carrello 
 
-Nel footer troviamo la mappa, i contatti e i social: **tre elementi inline** che, allo stringersi della pagina, si posizionano uno sotto l'altro grazie ad una **media query**.
+Cliccando nella parte di menù riguardante o nell'icona in alto a destra, veniamo rimandati alla pagina carrello. Qui troviamo sempre un container fluido come prima, ma con più righe e colonne.
+Al suo interno sono riportati l'immagine del prodotto, il suo costo, la quantità che desideriamo (grazie ad una casella di testo editabile), il prezzo totale  e la presenza o meno di personalizzazioni.
+
+---
+
+## Carrello
+
+Aumentando la quantità di prodotto desiderato, si attiverà una funzione di calcolo 'updateCosts' che aggiornernerà il costo totale del prodotto moltiplicando il costo base per la quantità inserita.
+Inoltre sommerà i costi totali dei vari prodotti presenti nel carrello per avere un subtotale 'subTotal', visibile nella riga **Totale prodotti**, per poi aggiungergli i costi di spedizione 'shippingCost' e aggiornare così il costo totale 'grandTotal' visibile nella riga **Totale**.
 
 ---
 
 ## About us 
 
-Nel footer troviamo la mappa, i contatti e i social: **tre elementi inline** che, allo stringersi della pagina, si posizionano uno sotto l'altro grazie ad una **media query**.
+Il corpo della pagina _**chi siamo**_ è diviso in 3 grandi fasce, riconoscibili dal distacco delle immagini di sfondo che ricoprono la larghezza dell'intera fascia:
+- Nella prima troviamo un titolo in alto al centro e un box con testo posizionato basso al centro, grazie al tag "vertical-align: bottom"
+- Nella seconda troviamo un box con opacità dell'80%, posizionato in alto a sinistra e contenente sia un titolo h2 che un testo
+- Nella terza troviamo un box posizionato al centro e contenente del testo, con al di sotto un bottone di rimando alla homepage
+
+---
+
+# Responsive delle pagine
+
+_Adattmenti creati grazie alle **media query**_
+
+---
+
+## Home page
+
+_Adattmenti creati grazie alle **media query**_
 
 ---
