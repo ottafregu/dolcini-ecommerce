@@ -3,7 +3,7 @@ theme: default
 _class: lead
 paginate: true
 backgroundColor: #fff
-backgroundImage: url('https://drive.google.com/file/d/1GTgl7tjp5VSY0mwuxW4a5ZVnHDwfXiCo/view?usp=sharing')
+backgroundImage: url('https://img.freepik.com/fotos-premium/natuerlicher-quadratischer-weisser-hintergrund_476151-596.jpg')
 marp: true
 footer: 'https://github.com/ottafregu/ecommerce-freguglia-dolcini'
 header: '**Carlotta Freguglia** _immagine di impresa_'
