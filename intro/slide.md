@@ -11,9 +11,10 @@ header: '**Carlotta Freguglia** _immagine di impresa_'
 
 # Presentazione del mio e-commerce
 
-_**Corso di WebDesign 2**_
-
-A. A. 2022-2023
+_**CORSO DI WEBDESIGN 2**_
+A. A. **2022-2023**
+Matricola **834**
+Docente **Matteo Baccan**
 
 
 <!-- _paginate: false -->
