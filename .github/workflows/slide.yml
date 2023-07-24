@@ -20,6 +20,8 @@ jobs:
       run: | 
         cd intro
         npx @marp-team/marp-cli@latest slide.md --pdf --allow-local-files
+      env:
+        PUPPETEER_TIMEOUT: 0
       
     - name: commit & push
       run: |
