@@ -12,7 +12,7 @@ header: '**Carlotta Freguglia** _immagine di impresa_'
 ---
 
 # Presentazione del mio e-commerce
-![ h:80px ](/img/logomarrone.png)
+![ h:80px ](immagini/logomarrone.png)
 
 _**CORSO DI WEBDESIGN 2**_
 
@@ -68,7 +68,7 @@ Bootstrap è un framework di sviluppo web gratuito e open source, progettato per
 _Headline & Footer_
 
 ---
-![h:50px ](/img/headline.png)
+![bgh:50px ](immagini/headline.png)
 ## Headline
 
 Nella parte sinistra della headline troviamo un **menù a comparsa** che, al click sulle tre lineette, richiama l'evento 'activateMenu', permettendo così alle 3 fasce '.menu-top', '.menu-middle' e '.menu-bottom' di espandersi e rendendo così visibile sia il loro link interno '.menu-text', sia la X '.menu-close' per chiudere l'intero menù e farlo tornare alla forma iniziale.
@@ -76,32 +76,28 @@ Nella parte sinistra della headline troviamo un **menù a comparsa** che, al cli
 ---
 
 ## Headline
-![h:530px ](/img/codicemenu.png)
+![h:530px ](immagini/codicemenu.png)
 
 ---
-![h:50px ](/img/headline.png)
+![bgh:50px ](immagini/headline.png)
 ## Headline
 
 Al centro della headline troviamo il **logo del brand** che funge anche da collegamento alla home del sito, lavorando come se fosse un link.
 
 ---
-![h:50px ](/img/headline.png)
+![bgh:50px ](immagini/headline.png)
 ## Headline
 
 Nella parte destra della headline troviamo il **carrello** in cui, grazie alla funzione 'aggiungiAlCarrello' e 'rimuoviDalCarrello', associate ai tasti presenti sotto ai box prodotti, possiamo vedere il numero di questi inseritovi dentro.
 Inoltre, questa icona funge da collegamento alla pagina del carrello stesso.
 
 ---
-![h:90px ](/img/footer.png)
+
 ## Footer
 
 Nel footer troviamo la mappa, i contatti e i social: **tre elementi inline** che, allo stringersi della pagina, si posizionano uno sotto l'altro grazie ad una **media query**.
 
----
-![h:90px ](/img/footer.png)
-## Footer
-
-Nel footer troviamo la mappa, i contatti e i social: **tre elementi inline** che, allo stringersi della pagina, si posizionano uno sotto l'altro grazie ad una **media query**.
+![bgh:120px ](immagini/footer.png)
 
 ---
 
@@ -115,19 +111,19 @@ _Home - Prodotto - Carrello - About us_
 
 Nella home page troviamo uno slider, un titolo e le tre caselle prodotto.
 - Lo slider, cui codice nativo è stato preso da https://swiperjs.com/, contiene 6 immagini di dolci che scorrono una dopo l'altra grazie alla funzione Javascript 'autoplay'.
-![bg right:40% h:90px ](/img/homepage.png)
+![bg right:46% h:600px ](immagini/homepage.png)
 
 ---
 ## Home page
 
-![h:400px ](/img/codiceswiper.png)
+![h:400px ](immagini/codiceswiper.png)
 
 ---
 
 ## Home page
 
 - Sotto allo slider vi è un titlo che funziona da collegamento con un'ancora interna alla pagina, posizionata appena sopra, che permette al click sulla scritta di far salire la pagina, in modo da rendere visibili le tre caselle prodotto.
-![bg right:40% ](/img/homepage.png)
+![bg right:46% h:600px ](immagini/homepage.png)
 
 ---
 
@@ -136,7 +132,7 @@ Nella home page troviamo uno slider, un titolo e le tre caselle prodotto.
 - Sotto alla scitta ci sono le tre caselle prodotto che, usando la class 'card h-100', contengono l'immagine del prodotto, il suo nome, la descrizione, il costo e i tasti collegati al carrello per aggiungere o togliere quantità.
 
 Al passaggio del puntatore sulle immagini dei prodotti, queste diminuiscono l'opacità e si crea un'ombra marrone attorno ad esse. Cliccandoci su invece, si viene reindirizzati alla pagine del prodotto stesso.
-![bg right:40% h:90px ](/img/homepage.png)
+![bg right:46% h:600px ](immagini/homepage.png)
 
 ---
 
@@ -145,7 +141,7 @@ Al passaggio del puntatore sulle immagini dei prodotti, queste diminuiscono l'op
 Nella pagina prodotto troviamo un container fluido di boostrap, contenente due colonne in cui è inserita nuovamente la foto del prodotto e le informazioni a riguardo.
 
 Il box si presenta bianco con un'ombra marrone all'esterno; nella parte delle informazioni sono presenti dei menù a tendina il cui codice nativo è stato preso da https://getbootstrap.com/, che permettono di scegliere quella che sarà la personalizzazione del prodotto.
-![bg right:40% h:150px ](/img/prodotto.png)
+![bg right:45% h:400px ](immagini/prodotto.png)
 
 ---
 
@@ -153,7 +149,7 @@ Il box si presenta bianco con un'ombra marrone all'esterno; nella parte delle in
 
 ChatGPT mi ha aiutata nella creazione del codice per poter far funzionare i calcoli all'interno del carrello.
 
-![h:300px ](/img/screenchatgpt.png)
+![h:300px ](immagini/screenchatgpt.png)
 
 ---
 
@@ -161,7 +157,7 @@ ChatGPT mi ha aiutata nella creazione del codice per poter far funzionare i calc
 
 Cliccando nella parte di menù riguardante o nell'icona in alto a destra, veniamo rimandati alla pagina carrello. Qui troviamo sempre un container fluido come prima, ma con più righe e colonne.
 Al suo interno sono riportati l'immagine del prodotto, il suo costo e la quantità che desideriamo (grazie ad una casella di testo editabile), il prezzo totale e la presenza o meno di personalizzazioni.
-![bg right:40% h:90px ](/img/carrello.png)
+![bg right:44% h:440px ](immagini/carrello.png)
 
 ---
 
@@ -169,12 +165,12 @@ Al suo interno sono riportati l'immagine del prodotto, il suo costo e la quantit
 
 Aumentando la quantità di prodotto desiderato, si attiverà una funzione di calcolo 'updateCosts' che aggiornernerà il costo totale del prodotto moltiplicando il costo base per la quantità inserita.
 Inoltre, sommerà i costi totali dei vari prodotti presenti nel carrello per avere un subtotale 'subTotal', visibile nella riga **Totale prodotti**, per poi aggiungergli i costi di spedizione 'shippingCost' e aggiornare così il costo totale 'grandTotal' visibile nella riga **Totale**.
-![bg right:40% h:90px ](/img/carrello.png)
+![bg right:44% h:440px ](immagini/carrello.png)
 
 ---
 
 ## Carrello
-![h:500px ](/img/codicecarrello.png)
+![bg right:61% h:700px ](immagini/codicecarrello.png)
 
 ---
 
@@ -182,7 +178,7 @@ Inoltre, sommerà i costi totali dei vari prodotti presenti nel carrello per ave
 
 Il corpo della pagina _**chi siamo**_ è diviso in 3 grandi fasce, riconoscibili dal distacco delle immagini di sfondo che ricoprono la larghezza dell'intera fascia:
 - Nella prima troviamo un titolo in alto al centro e un box con testo posizionato basso al centro, grazie al tag "vertical-align: bottom"
-![bg right:40% h:90px ](/img/carrello.png)
+![bg right:49% h:600px](immagini/chisono.png)
 
 ---
 
@@ -190,7 +186,7 @@ Il corpo della pagina _**chi siamo**_ è diviso in 3 grandi fasce, riconoscibili
 
 - Nella seconda troviamo un box con opacità dell'80%, posizionato in alto a sinistra e contenente sia un titolo h2 che un testo
 - Nella terza troviamo un box posizionato al centro e contenente del testo, con al di sotto un bottone di rimando alla homepage.
-![bg right:40% h:90px ](/img/carrello.png)
+![bg right:49% h:600px ](immagini/chisono.png)
 
 ---
 # Responsive delle pagine
@@ -201,25 +197,25 @@ _Adattmenti creati grazie alle **media query**_
 
 **SCHERMI MOLTO GRANDI**
 Più grandi di **1200px**
-![schermi molto grandi h:500px ](/img/screenpc.png)
+![schermi molto grandi h:500px ](immagini/screenpc.png)
 
 ---
 
 **SCHERMI GRANDI**
 Compresi tra **992px e 1200px**
-![schermi grandi h:500px ](/img/screentablet.png)
+![schermi grandi h:500px ](immagini/screentablet.png)
 
 ---
 
 **SCHERMI MEDI**
 Compresi tra **768px e 992px**
-![schermi medi h:500px ](/img/screen768.png)
+![schermi medi h:500px ](immagini/screen768.png)
 
 ---
 
 **SCHERMI MEDIO-PICCOLI**
 Compresi tra **576px e 768px**
-![schermi piccoli h:500px ](/img/screentelefono.png)
+![schermi piccoli h:500px ](immagini/screentelefono.png)
 
 ---
 
@@ -236,4 +232,4 @@ In sintesi, la scelta di utilizzare il formato .webp per le immagini del mio sit
 
 PageSpeed Insights https://pagespeed.web.dev/ è uno strumento gratuito di Google che permette di misurare la velocità di caricamento di una pagina web e le sue prestazioni.
 
-![schermi piccoli h:190px ](/img/prestazioni.png)
+![schermi piccoli h:190px ](immagini/prestazioni.png)
