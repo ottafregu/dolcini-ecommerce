@@ -79,7 +79,7 @@ Nella parte sinistra della headline troviamo un **menù a comparsa** che, al cli
 
 ## Headline
 Codice in js del menu
-![bg right:61% h:700px](immagini/codicemenu.png)
+![bg right:61% h:650px](immagini/codicemenu.png)
 
 ---
 ![bgh:50px ](immagini/headline.png)
@@ -174,7 +174,7 @@ Inoltre, sommerà i costi totali dei vari prodotti presenti nel carrello per ave
 
 ## Carrello
 Codice in js del carrello
-![bg right:61% h:700px ](immagini/codicecarrello.png)
+![bg right:61% h:650px ](immagini/codicecarrello.png)
 
 ---
 
