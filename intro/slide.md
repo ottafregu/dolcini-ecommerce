@@ -3,7 +3,7 @@ theme: default
 _class: lead
 paginate: true
 backgroundColor: #fff
-backgroundImage: url('https://img.freepik.com/fotos-premium/natuerlicher-quadratischer-weisser-hintergrund_476151-596.jpg')
+backgroundImage: url('https://github.com/ottafregu/ecommerce-freguglia-dolcini/blob/main/img/sfondo_slide.png?raw=true')
 marp: true
 footer: 'https://github.com/ottafregu/ecommerce-freguglia-dolcini'
 header: '**Carlotta Freguglia** _immagine di impresa_' 
@@ -51,9 +51,15 @@ Queste pagine sono accomunate da una **headline** e da un **footer** ricorrenti 
 
 # Strumenti usati
 
-Per programmare questo sito ho lavorato su Visual studio code di github, creando fogli di HTML, CSS e Javascript.
+Per programmare le varie pagine di questo sito mi sono affidata a **Codespace**, lo spazio dedicato alla gestione dei codici e delle varie pagine del sito in HTML, CSS e Javascript contenuto all'interno di **Github**, il servizio di hosting per i vari commit e repository dei nostri progetti.
 
-Il repository è stato collegato a questo link di netlify: https://github.com/ottafregu/ecommerce-freguglia-dolcini
+Il mio repository è stato collegato a questo link di netlify: https://github.com/ottafregu/ecommerce-freguglia-dolcini
+
+---
+
+# Strumenti usati
+Per la creazione di alcune parti del mio sito, ho utilizzato **Bootstrap** per aiutarmi a gestire in m odo più responsive gli spazi.
+Bootstrap è un framework di sviluppo web gratuito e open source, progettato per facilitare il processo di sviluppo web di siti responsive e mobile-first, fornendo una raccolta di sintassi per i modelli di progettazione.
 
 ---
 
