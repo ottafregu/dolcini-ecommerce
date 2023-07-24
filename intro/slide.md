@@ -3,7 +3,7 @@ theme: default
 _class: lead
 paginate: true
 backgroundColor: #fff
-backgroundImage: url('https://img.freepik.com/fotos-premium/natuerlicher-quadratischer-weisser-hintergrund_476151-596.jpg')
+backgroundImage: url('https://github.com/ottafregu/ecommerce-freguglia-dolcini/blob/main/intro/immagini/sfondo_slide.png?raw=true')
 marp: true
 footer: 'https://github.com/ottafregu/ecommerce-freguglia-dolcini'
 header: '**Carlotta Freguglia** _immagine di impresa_' 
@@ -15,8 +15,8 @@ header: '**Carlotta Freguglia** _immagine di impresa_'
 ![ h:80px ](immagini/logomarrone.png)
 
 _**CORSO DI WEBDESIGN 2**_
-
 A. A. **2022-2023**
+-
 Matricola **834**
 Docente **Matteo Baccan**
 
