@@ -12,6 +12,7 @@ header: '**Carlotta Freguglia** _immagine di impresa_'
 ---
 
 # Presentazione del mio e-commerce
+
 ![ h:80px ](immagini/logomarrone.png)
 
 _**CORSO DI WEBDESIGN 2**_
