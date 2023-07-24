@@ -131,8 +131,15 @@ Al passaggio del puntatore sulle immagini dei prodotti, queste diminuiscono l'op
 Nella pagina prodotto troviamo un container fluido di boostrap, contenente due colonne in cui è inserita nuovamente la foto del prodotto e le informazioni a riguardo.
 
 Il box si presenta bianco con un'ombra marrone all'esterno; nella parte delle informazioni sono presenti dei menù a tendina il cui codice nativo è stato preso da https://getbootstrap.com/, che permettono di scegliere quella che sarà la personalizzazione del prodotto.
-![bg right:40% h:90px ](/img/prodotto.png)
+![bg right:40% h:150px ](/img/prodotto.png)
 
+---
+
+## Uso dell'Ai nel Carrello
+
+ChatGPT mi ha aiutata nella creazione del codice per poter far funzionare i calcoli all'interno del carrello.
+
+![h:300px ](/img/screenchatgpt.png)
 
 ---
 
@@ -199,7 +206,15 @@ Compresi tra **576px e 768px**
 
 ## Immagini
 
-Tutte le immagini presenti in questo sito sono state convertite in formato **.webp**
+Tutte le immagini presenti in questo sito sono state convertite in formato **.webp** dal sito https://anyconv.com/it/ .
 Questo perchè il formato .webp è un **tipo di file per immagini raster sviluppato da Google** che utilizza un algoritmo di compressione avanzato, chiamato VP8 o VP9, che permette di ottenere **dimensioni di file più piccole** rispetto ad altri formati comunemente utilizzati, come il .jpeg o il .png, **mantenendo la qualità visiva dell'immagine.**
 
 In sintesi, la scelta di utilizzare il formato .webp per le immagini del mio sito web mi ha consentito di **migliorare le prestazioni** complessive del sito e di offrire un'**esperienza più veloce e piacevole** ai visitatori.
+
+---
+
+# Prestazioni
+
+PageSpeed Insights https://pagespeed.web.dev/ è uno strumento gratuito di Google che permette di misurare la velocità di caricamento di una pagina web e le sue prestazioni.
+
+![schermi piccoli h:190px ](/img/prestazioni.png)
