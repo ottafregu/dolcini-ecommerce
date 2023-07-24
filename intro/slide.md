@@ -76,7 +76,8 @@ Nella parte sinistra della headline troviamo un **menù a comparsa** che, al cli
 ---
 
 ## Headline
-![h:530px ](immagini/codicemenu.png)
+Codice in js del menu
+![bg right:61% h:700px](immagini/codicemenu.png)
 
 ---
 ![bgh:50px ](immagini/headline.png)
@@ -115,8 +116,8 @@ Nella home page troviamo uno slider, un titolo e le tre caselle prodotto.
 
 ---
 ## Home page
-
-![h:400px ](immagini/codiceswiper.png)
+Codice in js dello slider
+![bg right:61% h:400px](immagini/codiceswiper.png)
 
 ---
 
@@ -170,6 +171,7 @@ Inoltre, sommerà i costi totali dei vari prodotti presenti nel carrello per ave
 ---
 
 ## Carrello
+Codice in js del carrello
 ![bg right:61% h:700px ](immagini/codicecarrello.png)
 
 ---
