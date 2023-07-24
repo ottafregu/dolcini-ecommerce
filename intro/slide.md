@@ -3,7 +3,7 @@ theme: default
 _class: lead
 paginate: true
 backgroundColor: #fff
-backgroundImage: url('https://github.com/ottafregu/ecommerce-freguglia-dolcini/blob/main/img/sfondo_slide.png?raw=true')
+backgroundImage: url('https://img.freepik.com/fotos-premium/natuerlicher-quadratischer-weisser-hintergrund_476151-596.jpg')
 marp: true
 footer: 'https://github.com/ottafregu/ecommerce-freguglia-dolcini'
 header: '**Carlotta Freguglia** _immagine di impresa_' 
@@ -58,7 +58,7 @@ Il mio repository è stato collegato a questo link di netlify: https://github.co
 ---
 
 # Strumenti usati
-Per la creazione di alcune parti del mio sito, ho utilizzato **Bootstrap** per aiutarmi a gestire in m odo più responsive gli spazi.
+Per la creazione di alcune parti del mio sito, ho utilizzato **Bootstrap per aiutarmi a gestire in m odo più responsive gli spazi.
 Bootstrap è un framework di sviluppo web gratuito e open source, progettato per facilitare il processo di sviluppo web di siti responsive e mobile-first, fornendo una raccolta di sintassi per i modelli di progettazione.
 
 ---
