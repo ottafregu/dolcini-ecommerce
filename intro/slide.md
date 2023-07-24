@@ -74,6 +74,11 @@ _Headline & Footer_
 Nella parte sinistra della headline troviamo un **menù a comparsa** che, al click sulle tre lineette, richiama l'evento 'activateMenu', permettendo così alle 3 fasce '.menu-top', '.menu-middle' e '.menu-bottom' di espandersi e rendendo così visibile sia il loro link interno '.menu-text', sia la X '.menu-close' per chiudere l'intero menù e farlo tornare alla forma iniziale.
 
 ---
+
+## Headline
+![h:530px ](/img/codicemenu.png)
+
+---
 ![h:50px ](/img/headline.png)
 ## Headline
 
@@ -113,10 +118,13 @@ Nella home page troviamo uno slider, un titolo e le tre caselle prodotto.
 ![bg right:40% h:90px ](/img/homepage.png)
 
 ---
-
 ## Home page
 
-Nella home page troviamo uno slider, un titolo e le tre caselle prodotto.
+![h:400px ](/img/codiceswiper.png)
+
+---
+
+## Home page
 
 - Sotto allo slider vi è un titlo che funziona da collegamento con un'ancora interna alla pagina, posizionata appena sopra, che permette al click sulla scritta di far salire la pagina, in modo da rendere visibili le tre caselle prodotto.
 ![bg right:40% ](/img/homepage.png)
@@ -162,6 +170,11 @@ Al suo interno sono riportati l'immagine del prodotto, il suo costo e la quantit
 Aumentando la quantità di prodotto desiderato, si attiverà una funzione di calcolo 'updateCosts' che aggiornernerà il costo totale del prodotto moltiplicando il costo base per la quantità inserita.
 Inoltre, sommerà i costi totali dei vari prodotti presenti nel carrello per avere un subtotale 'subTotal', visibile nella riga **Totale prodotti**, per poi aggiungergli i costi di spedizione 'shippingCost' e aggiornare così il costo totale 'grandTotal' visibile nella riga **Totale**.
 ![bg right:40% h:90px ](/img/carrello.png)
+
+---
+
+## Carrello
+![h:500px ](/img/codicecarrello.png)
 
 ---
 
