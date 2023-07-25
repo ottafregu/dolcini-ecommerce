@@ -53,15 +53,28 @@ Queste pagine sono accomunate da una **headline** e da un **footer** ricorrenti 
 
 # Strumenti usati
 
-Per programmare le varie pagine di questo sito mi sono affidata a **Codespace**, lo spazio dedicato alla gestione dei codici e delle varie pagine del sito in HTML, CSS e Javascript contenuto all'interno di **Github**, il servizio di hosting per i vari commit e repository dei nostri progetti.
+Per programmare le varie pagine di questo sito mi sono affidata a **Codespace**, l'ambiente di sviluppo gratuito di **Github**   basato sul cloud che consente agli sviluppatori di creare, testare e distribuire le loro applicazionidirettamente dalla piattaforma GitHub.
 
-Il mio repository è stato collegato a questo link di netlify: https://github.com/ottafregu/ecommerce-freguglia-dolcini
+CodeSpace **semplifica e accelera il processo di sviluppo** delle applicazioni e **promuove la collaborazione tra gli sviluppatori** all'interno della piattaforma GitHub.
+
+![bg right:30% h:300px](immagini/logo_codespace.png)
+
+---
+# Strumenti usati
+
+Per vedere l'anteprima del mio sito, ho collegato il mio repository a questo link di netlify: https://github.com/ottafregu/ecommerce-freguglia-dolcini
+
+**Netlify** è una società di cloud _computing remote-first_ che offre una piattaforma di sviluppo che include build, deployment e servizi di back-end serverless per applicazioni Web e siti Web dinamici. La piattaforma è costruita su standard web aperti, rendendo possibile l'integrazione di strumenti di compilazione, framework web, API e varie tecnologie web in un flusso di lavoro unificato per gli sviluppatori.
+
+![bg right:30% h:130px](immagini/Netlify_logo.png)
 
 ---
 
 # Strumenti usati
-Per la creazione di alcune parti del mio sito, ho utilizzato **Bootstrap per aiutarmi a gestire in m odo più responsive gli spazi.
+Per la creazione di alcune parti del mio sito, ho utilizzato **Bootstrap**, in modo da aiutarmi a gestire in maniera più responsive gli spazi.
 Bootstrap è un framework di sviluppo web gratuito e open source, progettato per facilitare il processo di sviluppo web di siti responsive e mobile-first, fornendo una raccolta di sintassi per i modelli di progettazione.
+
+![bg right:30% h:200px](immagini/Bootstrap_logo.png)
 
 ---
 
